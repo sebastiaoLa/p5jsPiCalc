@@ -60,7 +60,8 @@ function draw() {
                 if (currentN > 300) {
                     if (old_calcs > calcs_per_frame) {
                         text(`Limited to ${calcs_per_frame} calcs_per_frame`, 10, _textSize * 3.1)
-                        text(`Due to hardware limitations`, 10, _textSize * 4.1)
+                        text(`To maintain framerate`, 10, _textSize * 4.1)
+
                     } else {
                         text(`No limits now! ${Math.floor(frameRate())} fps calc per frame: ${calcs_per_frame}`, 10, _textSize * 3.1)
                     }
