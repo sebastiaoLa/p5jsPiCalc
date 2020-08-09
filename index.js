@@ -59,7 +59,7 @@ function draw() {
             if (currentN > 240) {
                 if (currentN > 300) {
                     if (old_calcs > calcs_per_frame) {
-                        text(`Limited to ${calcs_per_frame} calcs_per_frame`, 10, _textSize * 3.1)
+                        text(`Limited to ${calcs_per_frame} extra calcs_per_frame`, 10, _textSize * 3.1)
                         text(`To maintain framerate`, 10, _textSize * 4.1)
 
                     } else {
