@@ -57,22 +57,18 @@ function draw() {
         frameRate(currentN)
         if (currentN > 120) {
             if (currentN > 240) {
-                if (currentN > 300) {
-                    if (old_calcs > calcs_per_frame) {
-                        text(`Limited to ${calcs_per_frame} extra calcs_per_frame`, 10, _textSize * 3.1)
-                        text(`To maintain framerate`, 10, _textSize * 4.1)
+                if (old_calcs > calcs_per_frame) {
+                    text(`Limitado em ${calcs_per_frame} calcs_per_frame extras`, 10, _textSize * 3.1)
+                    text(`Para manter a taxa de quadros`, 10, _textSize * 4.1)
 
-                    } else {
-                        text(`No limits now! ${Math.floor(frameRate())} fps calc per frame: ${calcs_per_frame}`, 10, _textSize * 3.1)
-                    }
                 } else {
-                    text(`FASTER! ${currentN}`, 10, _textSize * 3.1)
+                    text(`Sem limites! ${Math.floor(frameRate())} fps calc per frame: ${calcs_per_frame}`, 10, _textSize * 3.1)
                 }
             } else {
-                text(`Faster ${currentN}`, 10, _textSize * 3.1)
+                text(`Acelera muito ${currentN}`, 10, _textSize * 3.1)
             }
         } else {
-            text(`Fast ${currentN}`, 10, _textSize * 3.1)
+            text(`Acelera ${currentN}`, 10, _textSize * 3.1)
         }
     }
 
